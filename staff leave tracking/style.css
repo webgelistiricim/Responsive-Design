@@ -1,0 +1,83 @@
+/* Normal stiller */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 30px auto;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.izin-talep {
+    cursor: pointer;
+    color: #3498db;
+    text-decoration: underline;
+}
+
+.izin-alacak {
+    cursor: pointer;
+    color: #27ae60;
+    text-decoration: underline;
+}
+
+.izin-onaylandi {
+    color: #27ae60;
+}
+
+.izin-onaylanmadi {
+    color: #e74c3c;
+}
+
+/* Açılır pencere stilleri */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.show-popup {
+    display: block;
+}
+
+.popup-close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}

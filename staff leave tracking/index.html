@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personel İzin Takip Çizelgesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Personel İzin Takip Çizelgesi</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Adı Soyadı</th>
+            <th>İzin Tipi</th>
+            <th>Başlangıç Tarihi</th>
+            <th>Bitiş Tarihi</th>
+            <th>İşlemler</th>
+            <th>Durum</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="personel" data-id="1" data-name="#" data-position="#">John Doe</td>
+            <td>
+                <select class="izin-tipi">
+                    <option value="Yıllık İzin">Yıllık İzin</option>
+                    <option value="Resmi Tatil">Resmi Tatil</option>
+                    <option value="Alacak İzin">Alacak İzin</option>
+                    <option value="İzin İptali">İzin İptali</option>
+                    <option value="Mesai">Mesai</option>
+                </select>
+            </td>
+            <td><label for="izinBaslangic"><input type="date"><input type="time"></label></td>
+            <td><label for="izinBitis"><input type="date"><input type="time"></label></td>
+            <td><span class="izin-talep" onclick="izinTalep(1)">İzin Talep</span></td>
+            <td class="izin-onaylandi">Onaylandı</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="personel" data-id="2" data-name="#" data-position="#">John Doe</td>
+            <td>
+                <select class="izin-tipi">
+                    <option value="Yıllık İzin">Yıllık İzin</option>
+                    <option value="Resmi Tatil">Resmi Tatil</option>
+                    <option value="Alacak İzin">Alacak İzin</option>
+                    <option value="İzin İptali">İzin İptali</option>
+                </select>
+            </td>
+            <td><label for="izinBaslangic"><input type="date"><input type="time"></label></td>
+            <td><label for="izinBitis"><input type="date"><input type="time"></label></td>
+            <td><span class="izin-talep" onclick="izinTalep(2)">İzin Talep</span></td>
+            <td class="izin-onaylandi">Onaylandı</td>
+        </tr>
+        <td>3</td>
+            <td class="personel" data-id="3" data-name="#" data-position="#">John Doe</td>
+            <td>
+                <select class="izin-tipi">
+                    <option value="Yıllık İzin">Yıllık İzin</option>
+                    <option value="Resmi Tatil">Resmi Tatil</option>
+                    <option value="Alacak İzin">Alacak İzin</option>
+                    <option value="İzin İptali">İzin İptali</option>
+                </select>
+            </td>
+            <td><label for="izinBaslangic"><input type="date"><input type="time"></label></td>
+            <td><label for="izinBitis"><input type="date"><input type="time"></label></td>
+            <td><span class="izin-talep" onclick="izinTalep(3)">İzin Talep</span></td>
+            <td class="izin-onaylandi">Onaylandı</td>
+        </tr>
+        <td>4</td>
+            <td class="personel" data-id="4" data-name="#" data-position="#">John Doe</td>
+            <td>
+                <select class="izin-tipi">
+                    <option value="Yıllık İzin">Yıllık İzin</option>
+                    <option value="Resmi Tatil">Resmi Tatil</option>
+                    <option value="Alacak İzin">Alacak İzin</option>
+                    <option value="İzin İptali">İzin İptali</option>
+                </select>
+            </td>
+            <td><label for="izinBaslangic"><input type="date"><input type="time"></label></td>
+            <td><label for="izinBitis"><input type="date"><input type="time"></label></td>
+            <td><span class="izin-talep" onclick="izinTalep(4)">İzin Talep</span></td>
+            <td class="izin-onaylandi">Onaylandı</td>
+        </tr>
+        <td>5</td>
+            <td class="personel" data-id="5" data-name="#" data-position="#">John Doe</td>
+            <td>
+                <select class="izin-tipi">
+                    <option value="Yıllık İzin">Yıllık İzin</option>
+                    <option value="Resmi Tatil">Resmi Tatil</option>
+                    <option value="Alacak İzin">Alacak İzin</option>
+                    <option value="İzin İptali">İzin İptali</option>
+                </select>
+            </td>
+            <td><label for="izinBaslangic"><input type="date"><input type="time"></label></td>
+            <td><label for="izinBitis"><input type="date"><input type="time"></label></td>
+            <td><span class="izin-talep" onclick="izinTalep(5)">İzin Talep</span></td>
+            <td class="izin-onaylandi">Onaylandı</td>
+        </tr>
+    </table>
+
+    <!-- İzin talep formu -->
+    <div class="popup" id="izinTalepForm">
+        <span class="popup-close" onclick="closePopup()">X</span>
+        <h3 id="popupPersonelAdi"></h3>
+        <p>Pozisyon: <span id="popupPersonelPozisyon"></span></p>
+        <label for="izinBaslangic">Başlangıç Tarihi:</label>
+        <label for="izinTarihBaslangic"><input type="time"></label>
+        <input type="date" id="izinBaslangic">
+        <label for="izinBitis">Bitiş Tarihi:</label>
+        <input type="date" id="izinBitis">
+        <label for="izinTarihBitis"><input type="time"></label>
+        <button onclick="submitIzinTalep()">İzin Talep Et</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
