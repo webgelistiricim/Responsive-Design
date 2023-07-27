@@ -1,0 +1,138 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.arac, .arac-geldi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 5px solid #10CE88;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.arac button, .arac-geldi button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #10CE88;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.musteribilgileri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 5px solid #10CE88;
+    border-radius: 5px;
+    margin: 10px;
+}
+.musteribilgileri button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #10CE88;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.parkyeri button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #10CE88;
+    color: #fff;
+    border: #fff;
+    border-radius: 5px;
+}
+.parkyeri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 5px solid #10CE88;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+.aracteslim button {
+    padding:  10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #10CE88;
+    color: #fff;
+    border: #fff;
+    border-radius: 5px;
+}
+
+.aracteslim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 5px solid #10CE88;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.personelyonetimi button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #10CE88;
+    color: #fff;
+    border: #fff;
+    border-radius: 5px;
+}
+
+.personelyonetimi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 5px solid #10CE88;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.odemevefatura button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #10CE88;
+    color: #fff;
+    border: #fff;
+    border-radius: 5px;
+}
+
+.odemevefatura{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 5px solid #10CE88;
+    border-radius: 5px;
+    margin: 10px;
+}
