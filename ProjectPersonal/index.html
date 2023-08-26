@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONEL TAKIP SISTEMI</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="header">
+    <h1 class="logo"><a href="index.html">Personel Takip <span>Sistemi</span></a></h1>
+  <ul class="main-nav">
+      <li><a href="#">Personel Ekle</a></li>
+      <li><a href="#">Personel Sil</a></li>
+  </ul>
+</header>
+<br><br><br>
+<!-- Navbar END... -->
+    <h2 id="OneTitle">Personel İzin Takip Sistemi</h2>
+    <div class="table-container">
+        <table class="table">
+            <tr>
+                <th>ID</th>
+            </tr>
+            <tr>
+                <td class="idDesign"><a href="#" onclick="openModal()">1</a></td>
+            </tr>
+        </table>
+    
+        <!-- Modal (Popup) -->
+        <div id="myModal" class="modal">
+            <!-- Modal içeriği -->
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="TwoTitle">TAKVİM</h2>
+                <div class="popup-button" onclick="togglePopup()">GÖSTER</div>
+                <div class="grid-container" id="popup">
+                    <div class="grid-item">OCAK
+                        <div class="izinTipleri">
+                            <br>
+                            YILLIK İZİN <input type="checkbox" class="yillikİzin">
+                            <br>
+                            ALACAK İZİN <input type="checkbox" class="alacakİzin">
+                            <br>
+                            MESAİ <input type="checkbox" class="mesai">
+                        </div>
+                    </div>
+                    <div class="grid-item">ŞUBAT
+                        <div class="izinTipleri">
+                            <br>
+                            YILLIK İZİN <input type="checkbox" class="yillikİzin">
+                            <br>
+                            ALACAK İZİN <input type="checkbox" class="alacakİzin">
+                            <br>
+                            MESAİ <input type="checkbox" class="mesai">
+                        </div>
+                    </div>
+                    <div class="grid-item">MART
+                        <div class="izinTipleri">
+                            <br>
+                            YILLIK İZİN <input type="checkbox" class="yillikİzin">
+                            <br>
+                            ALACAK İZİN <input type="checkbox" class="alacakİzin">
+                            <br>
+                            MESAİ <input type="checkbox" class="mesai">
+                        </div>
+                    </div>
+                    <div class="grid-item">NİSAN
+                        <div class="izinTipleri">
+                            <br>
+                            YILLIK İZİN <input type="checkbox" class="yillikİzin">
+                            <br>
+                            ALACAK İZİN <input type="checkbox" class="alacakİzin">
+                            <br>
+                            MESAİ <input type="checkbox" class="mesai">
+                        </div>
+                    </div>
+                    <div class="grid-item">MAYIS
+                        <div class="izinTipleri">
+                            <br>
+                            YILLIK İZİN <input type="checkbox" class="yillikİzin">
+                            <br>
+                            ALACAK İZİN <input type="checkbox" class="alacakİzin">
+                            <br>
+                            MESAİ <input type="checkbox" class="mesai">
+                        </div>
+                    </div>
+                    <div class="grid-item">HAZİRAN
+                        <div class="izinTipleri">
+                            <br>
+                            YILLIK İZİN <input type="checkbox" class="yillikİzin">
+                            <br>
+                            ALACAK İZİN <input type="checkbox" class="alacakİzin">
+                            <br>
+                            MESAİ <input type="checkbox" class="mesai">
+                        </div>
+                    </div>
+                    <div class="grid-item">TEMMUZ
+                        <div class="izinTipleri">
+                            <br>
+                            YILLIK İZİN <input type="checkbox" class="yillikİzin">
+                            <br>
+                            ALACAK İZİN <input type="checkbox" class="alacakİzin">
+                            <br>
+                            MESAİ <input type="checkbox" class="mesai">
+                        </div>
+                    </div>
+                    <div class="grid-item">AĞUSTOS
+                        <div class="izinTipleri">
+                            <br>
+                            YILLIK İZİN <input type="checkbox" class="yillikİzin">
+                            <br>
+                            ALACAK İZİN <input type="checkbox" class="alacakİzin">
+                            <br>
+                            MESAİ <input type="checkbox" class="mesai">
+                        </div>
+                    </div>
+                    <div class="grid-item">EYLÜL
+                        <div class="izinTipleri">
+                            <br>
+                            YILLIK İZİN <input type="checkbox" class="yillikİzin">
+                            <br>
+                            ALACAK İZİN <input type="checkbox" class="alacakİzin">
+                            <br>
+                            MESAİ <input type="checkbox" class="mesai">
+                        </div>
+                    </div>
+                    <div class="grid-item">EKİM
+                        <div class="izinTipleri">
+                            <br>
+                            YILLIK İZİN <input type="checkbox" class="yillikİzin">
+                            <br>
+                            ALACAK İZİN <input type="checkbox" class="alacakİzin">
+                            <br>
+                            MESAİ <input type="checkbox" class="mesai">
+                        </div>
+                    </div>
+                    <div class="grid-item">KASIM
+                        <div class="izinTipleri">
+                            <br>
+                            YILLIK İZİN <input type="checkbox" class="yillikİzin">
+                            <br>
+                            ALACAK İZİN <input type="checkbox" class="alacakİzin">
+                            <br>
+                            MESAİ <input type="checkbox" class="mesai">
+                        </div>
+                    </div>
+                    <div class="grid-item">ARALIK
+                        <div class="izinTipleri">
+                            <br>
+                            YILLIK İZİN <input type="checkbox" class="yillikİzin">
+                            <br>
+                            ALACAK İZİN <input type="checkbox" class="alacakİzin">
+                            <br>
+                            MESAİ<input type="checkbox" class="mesai">
+                            <div class="onayButon">
+                                <div class="izinOnayMenuStart">
+                                    <button id="btnİzinOnay">ONAY FORMU</button>
+                                    <div id="overlayMenu"></div>
+                                    <div id="popupİzinOnay">
+                                        <h2>İzin Onayı</h2>
+                                        <label>
+                                            <input type="checkbox" id="izinOnayi">
+                                            Seçimi Kabul Et
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" id="İzinOnaylanmadi">
+                                            Seçimi İptal Et
+                                        </label>
+                                        <br>
+                                        <button id="btnCloseİzinPopup"><a href="index.html">Kapat</a></button>
+                                    </div>
+                                </div>
+                                <span class="closeTwo" onclick="closeModal()">&times;</span>
+
+                            </div>
+                        </div>    
+                    </div>
+                    
+                </div>
+            </div>    
+        </div>
+        <div>
+        </div>
+        
+        <table class="table">
+            <tr>
+                <th>İsim</th>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+
+        <table class="table">
+            <tr>
+                <th>Soyisim</th>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+
+        <table class="table">
+            <tr>
+                <th>Pozisyon</th>
+            </tr>
+            <tr>
+                <td><select class="izinTipi">
+                    <option value="sec">Seçiniz</option>
+                    <option value="mudur">Müdür</option>
+                    <option value="mudurYardimcisi">Müdür Yardımcısı</option>
+                    <option value="kaptan">Kaptan</option>
+                    <option value="sef">Şef</option>
+                    <option value="Mudur">Garson</option>
+                </select></td>
+            </tr>
+        </table>
+
+        <table class="table">
+            <tr>
+                <th>İzin Başlangıç Tarihi</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="date" type="time">
+                    <input type="time">
+                </td>
+            </tr>
+        </table>
+
+        <table class="table">
+            <tr>
+                <th>İzin Bitiş Tarihi</th>
+            </tr>
+            <tr>
+                <td><input type="date">
+                <input type="time">
+                </td>
+            </tr>
+        </table>
+        <table class="table">
+            <tr>
+                <th>Durum</th>
+            </tr>
+            <tr>
+                <td class="izinOnaylandi">Onaylandı</td>
+            </tr>
+            <tr>
+                <td class="izinOnaylanmadi">Onaylanmadı</td>
+            </tr>
+        </table>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <footer class="footer-distributed">
+    
+          <div class="footer-left">
+    
+            <h3>PERSONEL TAKIP <span>SISTEMI</span></h3>
+  
+            <p class="footer-company-name">Batuhan Davarcı © 2023</p>
+          </div>
+    
+          <div class="footer-center">
+    
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>Cyprus</span> Nort Cyprus, Kyrenia</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+90 533 861 0697</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:destek@personeltakipsistesmi.com">destek@personeltakipsistemi.com</a></p>
+            </div>
+    
+          </div>
+    
+          <div class="footer-right">
+    
+            <p class="footer-company-about">
+              <span>Hakkımızda</span>
+              Daha fazlası için bizimle iletişime geçebilirsiniz, istek doğrultusunda tasarımlar için bizimle irtibat kurun.
+            </p>  
+            </div>
+    
+          </div>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/onayFormu.js"></script>

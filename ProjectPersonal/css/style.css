@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+body{
+    background-color: #B0C4DE;
+}
+#OneTitle {
+    text-align: center;
+    color: #34495e;
+}
+.table-container {
+    display: flex;
+}
+
+.idDesign a{
+    color: #34495e;
+}
+
+.idDesign a:hover{
+    color: red;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 250px;
+    border: 2px solid #34495e;
+    margin: 10px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #34495e;
+    text-align: center;
+    padding: 10px;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+/* Grid tablo stilini düzenle */
+.grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Dinamik sütun sayısı */
+        gap: 10px; /* Sütunlar arasındaki boşluk */
+        border: 1px solid #228B22;
+        padding: 10px;
+        visibility: hidden;
+        position: absolute;
+        background-color: #B0C4DE;
+        z-index: 1;
+        top: 50%; /* Popup tabloların yükseklik oranını değiştir */
+        left: 50%;
+        transform: translate(-50%, -50%); /* Popup tabloyu ortala */
+        width: 90%; /* Tabloyu ekranın %90'ına sığacak şekilde ayarla */
+        max-width: 850px; /* Maksimum genişlik belirle */
+}
+
+.izinOnaylandi{
+    color: #0d960d;
+}
+
+.izinOnaylanmadi{
+    color: red;
+}
+/* Grid hücreleri için stil */
+.grid-item {
+    font-family: 'Montserrat', sans-serif;
+    border: 3px solid #34495e;
+    text-align: center;
+    padding: 10px;
+    height: 150px; /* Hücre yüksekliği 150px */
+}
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Daha az sütun, daha küçük hücreler */
+    }
+}
+/* Popup düğmesi için stil */
+.popup-button {
+    cursor: pointer;
+    border: 1px solid #34495e;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    text-align: center;
+    width: 100%; /* Butonun genişliği %100 olacak şekilde ayarlanacak */
+    box-sizing: border-box; /* Kenar boşlukları ile birlikte %100 genişlik alacak */
+    margin-bottom: 10px; /* Altta boşluk bırakmak için */
+}
+
+.popup-button:hover{
+    background-color: #34495e;
+}
+/* Responsive tasarım için medya sorgusu */
+@media screen and (min-width: 900px) {
+    .popup-button {
+        width: auto; /* Eğer ekran genişliği 768px ve üzerindeyse butonun genişliği otomatik olacak */
+        margin-bottom: 0; /* Yatay düzenlemeler için altta boşluk bırakmayacak */
+    }
+}
+
+/* Calendar Pop-up */
+
+#TwoTitle {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: larger;
+    color: #34495e;
+}
+ /* Modal arkaplan stilini düzenle */
+ .modal {
+    display: none; /* Modal başlangıçta gizli olacak */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Arkaplanı koyu renk yap */
+}
+
+/* Modal içeriği stilini düzenle */
+.modal-content {
+    background-color: #B0C4DE;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #34495e;
+    width: 300px; /* Modal içeriğinin genişliği */
+}
+
+/* Modal kapatma butonu stilini düzenle */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.closeTwo {
+    color: black;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Modal kapatma butonuna hover stilini düzenle */
+.close:hover {
+    color: white;
+}
+.closeTwo:hover {
+    color: white;
+}
+
+
+
+.izinOnayMenuStart {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+#popupİzinOnay {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#overlayMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#btnİzinOnay {
+    
+    padding: 20px 40px;
+    background-color: #B0C4DE;
+    position: absolute;
+    right: 350px;
+}
+
+#btnİzinOnay:hover{
+    background-color: #34495e;
+}
+
+
